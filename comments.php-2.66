@@ -76,14 +76,6 @@ if (DISQUS_DEBUG) {
 						if (id > largestReadId) jQuery(this).css('background', 'lavender');
 						if (id > newLargestReadId) newLargestReadId = id;
 					}
-
-				<?php if ( is_user_logged_in() ) { ?>
-				var link = '<li><a href="/wp-content/themes/sandbox/custom/controller.php?action=setrotd&post_id=<?php echo $post->ID;?>&comment_id=' + id + '">ROTD</a></li>';		
-jQuery('#dsq-comment-body-' + id + '  .dsq-comment-actions').append(link);
-				<?php } ?>
-
-
-
 				});
 				var expiry = new Date();
 				expiry.setTime(expiry.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days
