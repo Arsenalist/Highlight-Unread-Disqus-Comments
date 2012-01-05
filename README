@@ -1,0 +1,5 @@
+If you have the Disqus Wordpress Plugin installed on your site, replacing comments.php
+with this file will highlight unread comments for all visitors.
+
+This currently works for version 2.66 of the plugin and relies on jQuery being available.
+
